@@ -1,0 +1,41 @@
+
+.sidebar {
+    width: 20%;
+    background-color:#aeaaaa74;
+    height: 100vh;
+    position: fixed;
+}
+.sidebar h2 {
+    text-align: center;
+}
+.sidebar  a{
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color:#333 ;
+    text-align: center;
+}
+.sidebar a:hover{
+    background-color:#ddd;
+}
+
+.contents {
+    width: 80%;
+    margin-left: 20%;
+    background-color:#f6efef;
+    padding: 10px;
+    height: 100vh;
+}
+
+h2{
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+.writeup{
+   display: block;
+   border: 1px solid rebeccapurple;
+}

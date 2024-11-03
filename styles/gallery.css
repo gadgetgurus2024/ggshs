@@ -1,0 +1,14 @@
+
+
+img{
+    width: 40vw;
+}
+
+.photos{
+    width: 100%;
+    display: flex;
+    column-gap: 20px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    
+}
