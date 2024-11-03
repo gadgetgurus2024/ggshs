@@ -94,6 +94,9 @@ window.addEventListener('load',grads);
 //---------------------------------    
     function grads() {
   
+    let comPhotos=localStorage.getItem('commercial');
+    let arrayComPhotos=comPhotos.split(',');
+
     let mainContent=document.createElement("main");
    mainContent.classList.add("mainPage");
                   
