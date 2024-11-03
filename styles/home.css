@@ -1,0 +1,36 @@
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro h1{
+    margin: 0px;
+    color: rgb(30, 143, 2);
+    text-align: center;
+}
+
+.intro p{
+    margin: 0px;
+    color: rgb(30, 143, 2);
+    text-align: center;
+}
+.photo {
+width: 50vw;
+height:100vh;
+background-image: url(../images/General/School.jpg);
+background-size: cover;
+background-position: right;
+}
+
+#login{
+    margin-right: 20px;
+    width: 75px;
+    height: 30px;
+    cursor: pointer;
+}
+
+
+
+
