@@ -1,12 +1,12 @@
 
-let allGrad=localStorage.getItem('allStudents');
+/*let allGrad=localStorage.getItem('allStudents');
 let arrayAllGrad=allGrad.split(',');
 let allGradCase=arrayAllGrad.map((lCase)=>lCase.toLowerCase());
 
 let comPhotos=localStorage.getItem('commercial');
 let arrayComPhotos=comPhotos.split(',');
 console.log(arrayComPhotos);
-
+*/
 
 let gradDept=localStorage.getItem('gradStudents');
 let arrayGradDept=gradDept.split(',').sort();
@@ -62,16 +62,16 @@ filterInput.addEventListener('click',removeFilterGrad)
 //----------------------------------
 function searchGrad() { 
     
-let comPhotosCase=arrayComPhotos.map((lCase)=>lCase.toLowerCase());
+//let comPhotosCase=arrayComPhotos.map((lCase)=>lCase.toLowerCase());
 searchBtn.disabled=true;
 let mainContent=document.createElement("main");
 
 for (let i=0; i<result.length; i++){
 
-    if(comPhotosCase.includes(result[i])){
+   /* if(comPhotosCase.includes(result[i])){
         ext='.png'  
     }
-
+*/
     let divContent=document.createElement("div");
     divContent.setAttribute('id','gradFilter')
     let passport=document.createElement("img");
@@ -95,19 +95,20 @@ for (let i=0; i<result.length; i++){
 window.addEventListener('load',grads);
 //---------------------------------    
     function grads() {
-  
+  /*
     let comPhotos=localStorage.getItem('commercial');
     let arrayComPhotos=comPhotos.split(',');
-
+*/
     let mainContent=document.createElement("main");
    mainContent.classList.add("mainPage");
                   
      for (let i=0; i<arrayGradDept.length; i++){
   
+    /*
         if(arrayComPhotos.includes(arrayGradDept[i])){
             ext='.png'
            }
-
+*/
          let divContent=document.createElement("div");
          divContent.setAttribute('id','grad')
          let passport=document.createElement("img");

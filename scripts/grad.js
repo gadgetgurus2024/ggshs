@@ -269,14 +269,15 @@ let buttonSearch='';
         
       
     localStorage.setItem('gradStudents',gradList);
-    if(gradList==commercialList){
+    
+    /*if(gradList==commercialList){
         fileExt='.png'
     };
-
-    localStorage.setItem('commercial',commercialList);
-    
+    //localStorage.setItem('commercial',commercialList);
+    */
+   
     localStorage.setItem('File_Extension',fileExt);
-        console.log(gradList);
+        //console.log(gradList);
         
     window.open('search.html');
     
