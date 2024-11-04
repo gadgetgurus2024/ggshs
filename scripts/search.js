@@ -5,9 +5,13 @@ let allGradCase=arrayAllGrad.map((lCase)=>lCase.toLowerCase());
 
 let comPhotos=localStorage.getItem('commercial');
 let arrayComPhotos=comPhotos.split(',');
+console.log(arrayComPhotos);
 
-let sciGrad=localStorage.getItem('gradStudents');
-let arraySciGrad=sciGrad.split(',').sort();
+
+let gradDept=localStorage.getItem('gradStudents');
+let arrayGradDept=gradDept.split(',').sort();
+let arrayGradDeptCase=arrayGradDept.map((lCase)=>lCase.toLowerCase());
+console.log(arrayGradDeptCase)
 
 
 let ext=localStorage.getItem('File_Extension');
@@ -21,11 +25,9 @@ searchBtn.addEventListener('click', searchGrad)
 //------------------------------------
 let result=[];
 
-console.log(result.length)
-
 function searchFunc(){
     let searchBox=document.getElementById('search-txt').value.toLowerCase();
-    result=allGradCase.filter(student=>student.includes(searchBox));
+    result=arrayGradDeptCase.filter(student=>student.includes(searchBox));
 }
 
 function displayResult() {
@@ -38,7 +40,7 @@ photos="images/SS_3_ALL/";
 
 function removeNodes() {
   
-for (let i=0; i<arraySciGrad.length; i++){
+for (let i=0; i<arrayGradDept.length; i++){
 let pix=document.getElementById('grad');
 pix.remove()
 }
@@ -100,9 +102,9 @@ window.addEventListener('load',grads);
     let mainContent=document.createElement("main");
    mainContent.classList.add("mainPage");
                   
-     for (let i=0; i<arraySciGrad.length; i++){
+     for (let i=0; i<arrayGradDept.length; i++){
   
-        if(arrayComPhotos.includes(arraySciGrad[i])){
+        if(arrayComPhotos.includes(arrayGradDept[i])){
             ext='.png'
            }
 
@@ -111,10 +113,10 @@ window.addEventListener('load',grads);
          let passport=document.createElement("img");
          
          
-         passport.setAttribute("src", photos + arraySciGrad[i]+ext);
+         passport.setAttribute("src", photos + arrayGradDept[i]+ext);
      
          let studName=document.createElement("p");
-         studName.textContent=arraySciGrad[i];
+         studName.textContent=arrayGradDept[i];
          divContent.appendChild(passport);
                     
          divContent.appendChild(studName);
@@ -128,4 +130,3 @@ window.addEventListener('load',grads);
              } 
 
 //-------------------------------------
-//document.addEventListener('click',()=>window.close('search.html'))
