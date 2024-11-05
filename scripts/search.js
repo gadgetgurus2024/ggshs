@@ -34,7 +34,7 @@ function displayResult() {
     console.log(result);
 }
 
-photos="images/SS_3_ALL/";
+photos="../images/SS_3_ALL/";
 
 //------------------------------------
 
@@ -77,7 +77,9 @@ for (let i=0; i<result.length; i++){
     let passport=document.createElement("img");
     passport.setAttribute("src", photos + result[i]+ext);
     let studName=document.createElement("p");
-    studName.textContent=result[i]//toUpperCase();
+    studName.textContent=result[i].toUpperCase();
+    studName.style.fontSize='16px'
+    studName.style.fontFamily='monospace'
     
     divContent.appendChild(passport);       
     divContent.appendChild(studName);
