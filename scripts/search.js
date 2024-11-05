@@ -11,7 +11,7 @@ console.log(arrayComPhotos);
 let gradDept=localStorage.getItem('gradStudents');
 let arrayGradDept=gradDept.split(',').sort();
 let arrayGradDeptCase=arrayGradDept.map((lCase)=>lCase.toLowerCase());
-console.log(arrayGradDeptCase)
+//console.log(arrayGradDeptCase)
 
 
 let ext=localStorage.getItem('File_Extension');
@@ -24,6 +24,7 @@ searchBtn.addEventListener('click', searchGrad)
 
 //------------------------------------
 let result=[];
+//let photoFile=[]
 
 function searchFunc(){
     let searchBox=document.getElementById('search-txt').value.toLowerCase();
@@ -32,6 +33,7 @@ function searchFunc(){
 
 function displayResult() {
     console.log(result);
+    
 }
 
 photos="images/SS_3_ALL/";
@@ -68,6 +70,25 @@ let mainContent=document.createElement("main");
 
 for (let i=0; i<result.length; i++){
 
+let resultSplit=result[i].split(' ')
+ 
+let smallCase=resultSplit[0][0]
+let surname=resultSplit[0].replace(smallCase,smallCase.toUpperCase())
+
+smallCase=resultSplit[1][0]
+let firstName=resultSplit[1].replace(smallCase,smallCase.toUpperCase())
+
+smallCase=resultSplit[2][0]
+let otherName=resultSplit[2].replace(smallCase,smallCase.toUpperCase()) 
+
+let photoName=surname + ' ' + firstName + ' ' + otherName
+
+//console.log(photoName);
+
+    
+  
+    
+
    /* if(comPhotosCase.includes(result[i])){
         ext='.png'  
     }
@@ -75,9 +96,8 @@ for (let i=0; i<result.length; i++){
     let divContent=document.createElement("div");
     divContent.setAttribute('id','gradFilter')
     let passport=document.createElement("img");
-    passport.setAttribute("src", photos + result[i]+ext);
-    console.log(passport);
-    
+    //passport.setAttribute("src", photos + result[i]+ext);
+    passport.setAttribute("src",photos+photoName+ext);
     
     let studName=document.createElement("p");
     studName.textContent=result[i].toUpperCase();
@@ -120,7 +140,6 @@ window.addEventListener('load',grads);
          
          
          passport.setAttribute("src", photos + arrayGradDept[i]+ext);
-     
          let studName=document.createElement("p");
          studName.textContent=arrayGradDept[i];
          divContent.appendChild(passport);
