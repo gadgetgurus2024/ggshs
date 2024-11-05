@@ -80,7 +80,7 @@ for (let i=0; i<result.length; i++){
     passport.setAttribute("src", photos + result[i]+ext);
     console.log((photos+result[i]+ext));
 */
-    passport.setAttribute('src',"../images/SS_3_ALL/"+result[i]+ext)
+    passport.setAttribute('src',"images/SS_3_ALL/"+result[i]+ext)
     let studName=document.createElement("p");
     studName.textContent=result[i].toUpperCase();
     studName.style.fontSize='16px'
