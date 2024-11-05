@@ -75,12 +75,10 @@ for (let i=0; i<result.length; i++){
     let divContent=document.createElement("div");
     divContent.setAttribute('id','gradFilter')
     let passport=document.createElement("img");
-    
-    /*
     passport.setAttribute("src", photos + result[i]+ext);
-    console.log((photos+result[i]+ext));
-*/
-    passport.setAttribute('src',"images/SS_3_ALL/"+result[i]+ext)
+    console.log(passport);
+    
+    
     let studName=document.createElement("p");
     studName.textContent=result[i].toUpperCase();
     studName.style.fontSize='16px'
