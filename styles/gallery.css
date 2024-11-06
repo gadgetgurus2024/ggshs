@@ -1,14 +1,10 @@
 
 
 img{
-    width: 40vw;
+    width: 250px;
+    
 }
 
-.photos{
-    width: 100%;
-    display: flex;
-    column-gap: 20px;
-    row-gap: 20px;
-    flex-wrap: wrap;
-    
+h1{
+    text-align: center;
 }
