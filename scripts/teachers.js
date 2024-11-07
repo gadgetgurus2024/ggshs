@@ -43,13 +43,13 @@ let oyefeso=document.getElementById('OYEFESO')
 oyefeso.addEventListener('click',()=>{
 clearPage()
 let teacherImage=document.createElement('img')
-teacherImage.setAttribute('src',pixFolder+teacherName[1]+'.jpg')
+teacherImage.setAttribute('src',pixFolder+teacherName[0]+'.jpg')
 console.log(teacherName);
 
 let heading=document.createElement('h2')
 let heading2=document.createElement('h3')
-heading.innerText='Mr Sobiye, J.T'; 
-heading2.innerText='Vice Principal (Admin)'; 
+heading.innerText='Mr Oyefeso, A.O'; 
+heading2.innerText='The Principal'; 
  
 
 let para1=document.createElement('p')
@@ -380,4 +380,7 @@ document.body.appendChild(para4)
 //document.body.appendChild(para5) 
 document.body.appendChild(writer)
 })
+
+//------------Other teachers---------
+
 
