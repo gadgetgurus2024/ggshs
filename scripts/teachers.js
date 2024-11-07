@@ -32,6 +32,13 @@ let teacherName=[
 
 let pixFolder='images/teachers_Pics/'
 
+let loading=document.getElementById('LOADING')
+loading.style.display='none'
+
+let loading2=document.getElementById('LOADING2')
+loading2.style.display='none'
+
+
 function clearPage() {
 for (let i=0;i<teachersId.length;i++){
     let teachers=document.getElementById(teachersId[i]).remove()
