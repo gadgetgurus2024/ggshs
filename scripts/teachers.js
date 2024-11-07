@@ -42,20 +42,20 @@ let oyefeso=document.getElementById('OYEFESO')
 oyefeso.addEventListener('click',()=>{
 clearPage()
 let teacherImage=document.createElement('img')
-teacherImage.setAttribute('src',pixFolder+teacherName[0]+'.jpg')
+teacherImage.setAttribute('src',pixFolder+teacherName[1]+'.jpg')
 console.log(teacherName);
 
 let heading=document.createElement('h2')
 let heading2=document.createElement('h3')
-heading.innerText='Mrs Oyefeso, A.O'; 
-heading2.innerText='Principal'; 
+heading.innerText='Mr Sobiye, J.T'; 
+heading2.innerText='Vice Principal (Admin)'; 
  
 
 let para1=document.createElement('p')
-para1.innerHTML='<p><b>Mrs Oyefeso Adenike</b> is  not only a leader but also a true inspiration to everyone in our school.Our Principal not only a leader but also a true inspiration to everyone at our school.Her warmth and kindness resonate with students and staff alike, making us feel like we are part of her family. She treats everyone as if they were her own children, always looking out for our well-being, progress, and success.</p>'
+para1.innerHTML='<b>Mrs Oyefeso Adenike</b> is  not only a leader but also a true inspiration to everyone in our school.Our Principal not only a leader but also a true inspiration to everyone at our school.Her warmth and kindness resonate with students and staff alike, making us feel like we are part of her family. She treats everyone as if they were her own children, always looking out for our well-being, progress, and success.'
 
 let para2=document.createElement('p')
-para2.innerHTML='<p><b>Mrs Oyefeso</b> is genuinely committed to creating a supportive and nurturing environment where everyone feels valued and heard. Her door is always open to students, teachers, and parents alike, whether it’s for guidance, support, or encouragement on academic and personal issues alike. This openness fosters trust and makes our school feel like a true family.</p>'
+para2.innerHTML='<b>Mrs Oyefeso</b> is genuinely committed to creating a supportive and nurturing environment where everyone feels valued and heard. Her door is always open to students, teachers, and parents alike, whether it’s for guidance, support, or encouragement on academic and personal issues alike. This openness fosters trust and makes our school feel like a true family.'
 
 let para3=document.createElement('p')
 para3.innerHTML='<p>One of <b>Mrs Oyefeso </b>outstanding qualities is her ability to take on challenges with enthusiasm. Rather than viewing obstacles as setbacks, she treats each one as an opportunity to grow and learn. This positive attitude sets a powerful example for us all, teaching us resilience, discipline, and the value of hard work. <b>Mrs Oyefeso</b> approach encourages us to face our own challenges with courage and determination.</p>'
@@ -95,29 +95,19 @@ heading2.innerText='Vice Principal(Admin)';
  
 
 let para1=document.createElement('p')
-para1.innerHTML='<p><b>Mrs Oyefeso Adenike</b> is  not only a leader but also a true inspiration to everyone in our school.Our Principal not only a leader but also a true inspiration to everyone at our school.Her warmth and kindness resonate with students and staff alike, making us feel like we are part of her family. She treats everyone as if they were her own children, always looking out for our well-being, progress, and success.</p>'
+para1.innerHTML='Our Vice Principal <b>Mr Shobiye</b> is more than just a leader; he’s a steady source of guidance and strength to us, a true father figure to all of us.<br>From the moment he stepped into  the school , his presence brings a sense of eassurance, like having a mentor who genuinely cares about our journey and success. He never fails to give words of advice, encouragement and affirmation, Infact, He is a pastor, leader, teacher and everything that resonates greatness'
 
 let para2=document.createElement('p')
-para2.innerHTML='<p><b>Mrs Oyefeso</b> is genuinely committed to creating a supportive and nurturing environment where everyone feels valued and heard. Her door is always open to students, teachers, and parents alike, whether it’s for guidance, support, or encouragement on academic and personal issues alike. This openness fosters trust and makes our school feel like a true family.</p>'
+para2.innerHTML='He is someone who is very careful with whatever he does and many people including students colleagues and parents respect him so much <br>  We are very grateful for his presence, and his impact will stay with us long after we leave this premises today. Thank you for being a guiding light and a true father figure to all of us'
 
-let para3=document.createElement('p')
-para3.innerHTML='<p>One of <b>Mrs Oyefeso </b>outstanding qualities is her ability to take on challenges with enthusiasm. Rather than viewing obstacles as setbacks, she treats each one as an opportunity to grow and learn. This positive attitude sets a powerful example for us all, teaching us resilience, discipline, and the value of hard work. <b>Mrs Oyefeso</b> approach encourages us to face our own challenges with courage and determination.</p>'
-
-let para4=document.createElement('p')
-para4.innerHTML='<p>As a principal, she goes above and beyond the typical duties of her role.<b>Mrs Oyefeso</b> motivates us to aim higher, believe in ourselves, and pursue our goals wholeheartedly. Her dedication to each individual’s growth both academically and personally is remarkable, and it makes a real difference in our lives. She always says,"Good girls make good ladies, good ladies make good wives and good wives make good mothers. You cannot give what you do not have"</p>'
-
-let para5=document.createElement('p')
-para5.innerHTML='<p>In summary, our principal,<b>Mrs Oyefeso</b> is a role model who leads with compassion, strength, and vision, and we are incredibly fortunate to have her guiding us. We are eternally grateful for her presence and guidance.</p>'
 
 let writer=document.createElement('p')
-writer.innerHTML='<H4>Babalola Aishat<br>Head Girl<br>2023/2024</H4>'
+writer.innerHTML='<H4>Ogbu Patience<br>Head Girl<br>2023/2024</H4>'
 document.body.appendChild(teacherImage);
 document.body.appendChild(heading);
 document.body.appendChild(para1) 
 document.body.appendChild(para2)
-document.body.appendChild(para3) 
-document.body.appendChild(para4)
-document.body.appendChild(para5) 
+
 document.body.appendChild(writer)
 })
 
@@ -286,7 +276,7 @@ console.log(teacherName);
 
 let heading=document.createElement('h2')
 let heading2=document.createElement('h3')
-heading.innerText='Mr Uba, U. J'; 
+heading.innerText='Mrs Uba, U. J'; 
 heading2.innerText='Class Teacher,(SS 3B)'; 
  
 
@@ -314,3 +304,40 @@ document.body.appendChild(para4)
 //document.body.appendChild(para5) 
 document.body.appendChild(writer)
 })
+
+//----------------------------------
+let bankole=document.getElementById('BANKOLE')
+bankole.addEventListener('click',()=>{
+clearPage()
+let teacherImage=document.createElement('img')
+teacherImage.setAttribute('src',pixFolder+teacherName[16]+'.jpg')
+console.log(teacherName);
+
+let heading=document.createElement('h2')
+let heading2=document.createElement('h3')
+heading.innerText='Mr Bankole, O. S'; 
+heading2.innerText='Biology Teacher,'; 
+ 
+
+let para1=document.createElement('p')
+para1.innerHTML='<h2>An Exceptional Teacher!</h2><b>Mr Bankole</b> was my first class teacher in senior school. He was far more than just a class teacher or a biology teacher,  embodied the role of a mentor, protector and knowledgeable in biology. What truly set him apart was his attentiveness and genuine care for us. He wasnt just teaching us about cells and ecosystem; he was also teaching  us life lessons, showing us the important of tolerence, resilience and integrity.'
+
+let para2=document.createElement('p')
+para2.innerHTML='Whenever any of us needed any assistance or guidance, he was there no matter the time or effort it took. His door was always open,and he never hesitated to help,whether it was academic or personal. What made him exceptional was his perceptiveness. He would notice when something was not right, even if we did not say anything, and would approach us understand and compassionion. In this way, he worked like protector, creating a safe and supportive environment where we flet valued and seen.'
+                
+
+let para3=document.createElement('p')
+para3.innerHTML='Looking back, I can say he was more than just my class teacher. He taught me importance of empathy, of watching out for each other, and always striving the best version of oneself. His impact on my life goes beyond the clasroom, and I will always be grateful for his kindness, wisdom, and guidance.'
+
+let writer=document.createElement('p')
+writer.innerHTML='<H4>Anthony Happiness<br>Asst. Head Girl<br>2023/2024</H4>'
+document.body.appendChild(teacherImage);
+document.body.appendChild(heading);
+document.body.appendChild(para1) 
+document.body.appendChild(para2)
+document.body.appendChild(para3) 
+//document.body.appendChild(para4)
+//document.body.appendChild(para5) 
+document.body.appendChild(writer)
+})
+
