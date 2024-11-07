@@ -1,5 +1,5 @@
 
-let teachersId=['OYEFESO','SOBIYE','SANGOESAN','OLUWADAIRO','OLAGBUJI','OGUNTOYE','DOSUMU','GIWA','TIJANI','ADEYEMO','JAMIU','ADESOYE','SAFIRIYU','JINADU','IDOWU','ISITUA','BANKOLE','ABDULWAHAB','UBA','OGBATA','AJOSE','THANNI','AJAO','PHILLIPS','SHONAIKE'
+let teachersId=['OYEFESO','SOBIYE','SANGOESAN','OLUWADAIRO','OLAGBUJI','OGUNTOYE','DOSUMU','GIWA','TIJANI','ADEYEMO','JAMIU','ADESOYE','SAFIRIYU','JINADU','IDOWU','ISITUA','BANKOLE','ABDULWAHAB','UBA','OGBATA','AJOSE','THANNI','AJAO','PHILLIPS','SHONAIKE','HARRISSON'
 ]
 
 let teacherName=[
@@ -26,6 +26,7 @@ let teacherName=[
 'AJAO SAHEEDAT  KEHINDE', 
 'OLANIYI MOYOSORE FRANCIS',
 'PHILLIPS  TOSIN BLESSING', 
+'HARRISSON AKPAN HARRISSON',
 'SHONAIKE  ANUOLUWAPO  TOPE'
 ]
 
@@ -123,7 +124,7 @@ console.log(teacherName);
 
 let heading=document.createElement('h2')
 let heading2=document.createElement('h3')
-heading.innerText='Mr Dosunmu, M.A'; 
+heading.innerText='Mrs Dosunmu, M.A'; 
 heading2.innerText='HOD,(Science)'; 
  
 
@@ -337,6 +338,45 @@ document.body.appendChild(para1)
 document.body.appendChild(para2)
 document.body.appendChild(para3) 
 //document.body.appendChild(para4)
+//document.body.appendChild(para5) 
+document.body.appendChild(writer)
+})
+
+//------------------------------------
+
+let harrisson=document.getElementById('HARRISSON')
+harrisson.addEventListener('click',()=>{
+clearPage()
+let teacherImage=document.createElement('img')
+teacherImage.setAttribute('src',pixFolder+teacherName[25]+'.jpg')
+console.log(teacherName);
+
+let heading=document.createElement('h2')
+let heading2=document.createElement('h3')
+heading.innerText='Mr Harrisson, A. H'; 
+heading2.innerText='Physics Teacher'; 
+ 
+
+let para1=document.createElement('p')
+para1.innerHTML='<h2>A Great and Untiring teacher</h2><b>Mr Harrison Akpan</b> is a remarkable teacher who has left an incredible mark on our academic journey. As our Physics and Further math teacher,as well as the Jet Club Coordinator, he has consistently demonstrated a passion for teaching'
+
+let para2=document.createElement('p')
+para2.innerHTML='In the classroom, she brings enthusiasm and patience, making difficult topics easy to understand. I fondly remember how usually she gives us the opportunity to be "teachers for a day" just to ensure we understood what she has been teaching.Her passion is contagious, and her classes are always filled with excitement and curiousity.'
+
+let para3=document.createElement('p')
+para3.innerHTML='As Jet Club coordinator, <B>Mr Harrison Akpan</B> fuels our creativity and curiousity, encouraging us to explore new horizons.His guidance and support have empowered us to reach for the stars and strive for excellence. What sets him apart is his unwavering belief in his students potential. He sees the best in us even when we dont, and he pushes us to achieve greatness.'
+
+let para4=document.createElement('p')
+para4.innerHTML='<b>Mr Harrison Akpan</b> is an exceptional educator, mentor, and role model. His impact extends far beyond the classroom shaping the mind and heart of his students. We are lucky to have him in our lives.'
+
+let writer=document.createElement('p')
+writer.innerHTML='<H4>Tom Sarah<br>SS 3A<br>2023/2024</H4>'
+document.body.appendChild(teacherImage);
+document.body.appendChild(heading);
+document.body.appendChild(para1) 
+document.body.appendChild(para2)
+document.body.appendChild(para3) 
+document.body.appendChild(para4)
 //document.body.appendChild(para5) 
 document.body.appendChild(writer)
 })
