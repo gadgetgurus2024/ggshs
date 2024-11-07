@@ -18,3 +18,7 @@ input, #login{
     margin-bottom: 10%;
 }
 
+#note{
+    color: red;
+    text-align: center;
+}
