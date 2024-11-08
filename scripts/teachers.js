@@ -368,7 +368,7 @@ let para1=document.createElement('p')
 para1.innerHTML='<h2>A Great and Untiring teacher</h2><b>Mr Harrison Akpan</b> is a remarkable teacher who has left an incredible mark on our academic journey. As our Physics and Further math teacher,as well as the Jet Club Coordinator, he has consistently demonstrated a passion for teaching'
 
 let para2=document.createElement('p')
-para2.innerHTML='In the classroom, she brings enthusiasm and patience, making difficult topics easy to understand. I fondly remember how usually she gives us the opportunity to be "teachers for a day" just to ensure we understood what she has been teaching.Her passion is contagious, and her classes are always filled with excitement and curiousity.'
+para2.innerHTML='In the classroom, he brings enthusiasm and patience, making difficult topics easy to understand. I fondly remember how usually he gives us the opportunity to be "teacher for a day" just to ensure we understood what he has been teaching.His passion is contagious, and his classes are always filled with excitement and curiousity.'
 
 let para3=document.createElement('p')
 para3.innerHTML='As Jet Club coordinator, <B>Mr Harrison Akpan</B> fuels our creativity and curiousity, encouraging us to explore new horizons.His guidance and support have empowered us to reach for the stars and strive for excellence. What sets him apart is his unwavering belief in his students potential. He sees the best in us even when we dont, and he pushes us to achieve greatness.'
