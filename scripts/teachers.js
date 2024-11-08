@@ -377,7 +377,7 @@ let para4=document.createElement('p')
 para4.innerHTML='<b>Mr Harrison Akpan</b> is an exceptional educator, mentor, and role model. His impact extends far beyond the classroom shaping the mind and heart of his students. We are lucky to have him in our lives.'
 
 let writer=document.createElement('p')
-writer.innerHTML='<H4>Tom Sarah<br>SS 3A<br>2023/2024</H4>'
+writer.innerHTML='<H4>Ameh Praise<br>Health Prefect<br>2023/2024</H4>'
 document.body.appendChild(teacherImage);
 document.body.appendChild(heading);
 document.body.appendChild(para1) 
